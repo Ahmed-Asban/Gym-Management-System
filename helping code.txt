@@ -1,0 +1,157 @@
+     Add Code
+
+     SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("insert into gym_tab values(@gym_id,@name,@address)", con);
+
+            cnn.Parameters.AddWithValue("@Gym_Id", int.Parse(textBox1.Text));
+
+            cnn.Parameters.AddWithValue("@Name", textBox2.Text);
+
+            cnn.Parameters.AddWithValue("@Address", textBox3.Text);
+
+            cnn.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Record Added Successfully", "Add", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+
+      Gym_Load Code which is form load code
+
+
+       SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            SqlCommand cnn = new SqlCommand("select * from gym_tab", con);
+
+            SqlDataAdapter da = new SqlDataAdapter(cnn);
+
+            DataTable table = new DataTable();
+
+            da.Fill(table);
+
+            dataGridView1.DataSource = table;
+
+
+
+
+       Update Code
+
+
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("update gym_tab set name=@name,address=@address where gym_id=@gym_id",con);
+
+            cnn.Parameters.AddWithValue("@Gym_Id", int.Parse(textBox1.Text));
+
+            cnn.Parameters.AddWithValue("@Name", textBox2.Text);
+
+            cnn.Parameters.AddWithValue("@Address", textBox3.Text);
+
+            cnn.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Updated Successfully", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+         Delete Code
+
+
+         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("delete gym_tab where gym_id=@gym_id", con);
+
+            cnn.Parameters.AddWithValue("@Gym_Id", int.Parse(textBox1.Text));
+
+            cnn.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Deleted Successfully", "Delete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+
+         Search Code
+
+
+          SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("select * from gym_tab where gym_id=@gym_id", con);
+
+            cnn.Parameters.AddWithValue("@Gym_Id", int.Parse(textBox1.Text));
+
+            SqlDataAdapter da = new SqlDataAdapter(cnn);
+
+            DataTable table = new DataTable();
+
+            da.Fill(table);
+
+            con.Close();
+
+            dataGridView1.DataSource = table;
+
+
+
+
+         Registration Code
+
+
+          SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("insert into regis_tab values(@firstname,@lastname,@email,@password)", con);
+
+            cnn.Parameters.AddWithValue("@FirstName", textBox1.Text);
+
+            cnn.Parameters.AddWithValue("@LastName", textBox2.Text);
+
+            cnn.Parameters.AddWithValue("@Email", textBox3.Text);
+
+            cnn.Parameters.AddWithValue("@Password", textBox4.Text);
+
+
+            cnn.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Registration Completed", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+
+          Contact Us Code
+
+
+           SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-ADG77QL\SQLEXPRESS;Initial Catalog=gymdb;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cnn = new SqlCommand("insert into contact_tab values(@fullname,@email,@message)", con);
+
+            cnn.Parameters.AddWithValue("@FullName", textBox1.Text);
+
+            cnn.Parameters.AddWithValue("@Email", textBox2.Text);
+
+            cnn.Parameters.AddWithValue("@Message", richTextBox1.Text);
+
+            
+
+
+            cnn.ExecuteNonQuery();
+
+            con.Close();
+
+            MessageBox.Show("Thank You For Contacting Us !", "Thank You", MessageBoxButtons.OK, MessageBoxIcon.Information);

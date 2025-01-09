@@ -1,0 +1,1 @@
+the size of the data grid view: 1146, 496

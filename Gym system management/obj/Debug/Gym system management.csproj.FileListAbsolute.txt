@@ -1,0 +1,19 @@
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\bin\Debug\Gym system management.exe.config
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\bin\Debug\Gym system management.exe
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\bin\Debug\Gym system management.pdb
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.csproj.AssemblyReference.cache
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.csproj.SuggestedBindingRedirects.cache
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.Properties.Resources.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.csproj.GenerateResource.cache
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.csproj.CoreCompileInputs.cache
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.exe
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym system management.pdb
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.Login.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.MainForm.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.AddMember.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.UpdateDelete.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.ViewMember.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.Payments.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.trainer.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.signUp.resources
+C:\Programming\My Own Projects(WinForms)\Gym system management\Gym system management\obj\Debug\Gym_system_management.Login1.resources
